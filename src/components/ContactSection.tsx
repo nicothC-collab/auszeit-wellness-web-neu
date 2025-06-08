@@ -1,11 +1,8 @@
-
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Heart } from 'lucide-react';
-
 const ContactSection = () => {
-  return (
-    <section id="contact" className="py-20 bg-background">
+  return <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-cormorant text-4xl md:text-5xl font-light text-auszeit-text mb-6">
@@ -33,7 +30,7 @@ const ContactSection = () => {
                   
                   <div>
                     <h4 className="font-medium text-auszeit-text mb-2">E-Mail</h4>
-                    <p className="text-auszeit-text/70">info@auszeit-sonja.at</p>
+                    <p className="text-auszeit-text/70">info@auszeit-sonja.de</p>
                   </div>
                   
                   <div>
@@ -63,7 +60,7 @@ const ContactSection = () => {
                   <p className="text-auszeit-text/70 mb-6 leading-relaxed">
                     Ich nehme mir gerne Zeit für ein persönliches Gespräch, um die für dich passende Anwendung zu finden.
                   </p>
-                  <Button className="w-full bg-auszeit-pink hover:bg-auszeit-pink/90 text-white">
+                  <Button className="w-full bg-auszeit-pink hover:bg-auszeit-pink/90 text-white text-base">
                     E-Mail schreiben
                   </Button>
                 </CardContent>
@@ -98,8 +95,6 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;
