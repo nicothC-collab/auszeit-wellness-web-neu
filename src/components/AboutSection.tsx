@@ -1,9 +1,6 @@
-
 import { Heart } from 'lucide-react';
-
 const AboutSection = () => {
-  return (
-    <section id="about" className="py-20 bg-gradient-auszeit">
+  return <section id="about" className="py-20 bg-gradient-auszeit">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
@@ -39,11 +36,7 @@ const AboutSection = () => {
 
             <div className="text-center">
               <div className="w-80 h-80 bg-auszeit-pink-light rounded-full mx-auto flex items-center justify-center mb-6 relative overflow-hidden">
-                <img 
-                  src="/lovable-uploads/6a17b072-16c6-46e3-938b-2dc35039cb3c.png" 
-                  alt="Sonja Thalhammer"
-                  className="w-full h-full object-cover rounded-full"
-                />
+                <img src="/lovable-uploads/6a17b072-16c6-46e3-938b-2dc35039cb3c.png" alt="Sonja Thalhammer" className="w-full h-full rounded-full object-cover" />
               </div>
               <p className="font-cormorant text-xl text-auszeit-brown italic">
                 "In der Ruhe liegt die Kraft"
@@ -52,8 +45,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
