@@ -1,103 +1,79 @@
-
 import { Card, CardContent } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Heart, Sparkles } from 'lucide-react';
-
 const ServicesSection = () => {
-  const mainServices = [
-    {
-      title: "Reiki",
-      shortDesc: "Wirkt ausgleichend auf körperlicher und seelischer Ebene.",
-      description: "Eine sanfte Energiearbeit, die die natürlichen Selbstheilungskräfte aktiviert und tiefe Entspannung fördert.",
-      icon: "🌸",
-      price: "Auf Anfrage"
-    },
-    {
-      title: "Craniosacrale Entspannung",
-      shortDesc: "Fördert das harmonische Gleichgewicht zwischen Anspannung und Entspannung.",
-      description: "Eine sehr sanfte Behandlungsform, die das craniosacrale System harmonisiert und tiefe Ruhe schenkt. Kann auch bei Kopfschmerzen/Migräne, Schlafproblemen, Stress uvm. lindernd wirken.",
-      icon: "✨",
-      price: "Auf Anfrage"
-    },
-    {
-      title: "Heilsame Berührung - ganzheitliche Energiebehandlung",
-      shortDesc: "Mit sanften Berührungen an verschiedenen energetischen Punkten des Körpers.",
-      description: "Können Emotionen befreit, Themen gelöst der Kopf frei und Gedanken wieder klarer werden.",
-      icon: "🌿",
-      price: "Auf Anfrage"
-    },
-    {
-      title: "Kiefer R.E.S.E.T",
-      shortDesc: "Entspannt die Kiefermuskulatur und das Kiefergelenk.",
-      description: "Hilfreich bei Zähneknirschen/pressen, Kopfschmerzen verspannte Schultern/Nacken, uvm.",
-      icon: "🦋",
-      price: "Auf Anfrage"
-    }
-  ];
-
-  const massageServices = [
-    {
-      title: "Klassische Rückenmassage",
-      description: "Hier kannst du deine Seele baumeln lassen.",
-      price: "Auf Anfrage"
-    },
-    {
-      title: "\"Kleine Auszeit\" für Kopf, Gesicht & Arme",
-      description: "Hier darf dein Kopf \"frei\" und deine Gesichtszüge wieder entspannt werden.",
-      price: "Auf Anfrage"
-    },
-    {
-      title: "\"Große Auszeit\" - Klassische Ganzkörpermassage",
-      description: "90 Minuten Erholung pur für Körper, Geist & Seele.",
-      price: "Auf Anfrage"
-    },
-    {
-      title: "Lomi Lomi Nui Massage",
-      description: "Die Königin der Massagen. Großflächige fließende Bewegungen und viel Öl lassen diese Ganzkörpermassage zu einem \"Fest der Sinne\" werden.",
-      price: "Auf Anfrage"
-    },
-    {
-      title: "Teilmassage Rücken & Beine",
-      description: "In dieser entspannten Massage widmen wir uns ausschließlich deinem Rücken und deinen Beinen.",
-      price: "Auf Anfrage"
-    },
-    {
-      title: "Aromamassage",
-      description: "Alle Massagen gerne auch mit aromatisiertem Ölen möglich.",
-      price: "Aufpreis je 3 €"
-    },
-    {
-      title: "Fußreflexzonen - Wohlfühlmassage",
-      description: "Fördert die Durchblutung, sodass gestaute oder blockierte Lebensenergie wieder fließen kann.",
-      price: "Auf Anfrage"
-    }
-  ];
-
-  const specialServices = [
-    {
-      title: "Hormon - Balance - Massage",
-      description: "Wirkt entgiftend, entschlackend, den Hormonhaushalt harmonisierend & kann unterstützen bei PMS, Wechseljahresbeschwerden & hormonellen Dysfunktionen.",
-      price: "Auf Anfrage"
-    },
-    {
-      title: "Tibetische Energiemassage - Streicheleinheit für die Seele",
-      description: "Ein \"Wellness-Kurztrip\" mit Langzeitwirkung!",
-      price: "Auf Anfrage"
-    },
-    {
-      title: "Wirbelsäulenentspannung nach Breuss",
-      description: "Eine \"Verjüngungskur für die Bandscheiben\".",
-      price: "Auf Anfrage"
-    },
-    {
-      title: "Yin Yoga Kurse & Workshops",
-      description: "Ruhige, meditative Yoga-Praxis mit längeren Haltungen für tiefe Entspannung und innere Ruhe.",
-      price: "Auf Anfrage"
-    }
-  ];
-
-  return (
-    <section id="services" className="py-20 bg-background">
+  const mainServices = [{
+    title: "Reiki",
+    shortDesc: "Wirkt ausgleichend auf körperlicher und seelischer Ebene.",
+    description: "Eine sanfte Energiearbeit, die die natürlichen Selbstheilungskräfte aktiviert und tiefe Entspannung fördert.",
+    icon: "🌸",
+    price: "Auf Anfrage"
+  }, {
+    title: "Craniosacrale Entspannung",
+    shortDesc: "Fördert das harmonische Gleichgewicht zwischen Anspannung und Entspannung.",
+    description: "Eine sehr sanfte Behandlungsform, die das craniosacrale System harmonisiert und tiefe Ruhe schenkt. Kann auch bei Kopfschmerzen/Migräne, Schlafproblemen, Stress uvm. lindernd wirken.",
+    icon: "✨",
+    price: "Auf Anfrage"
+  }, {
+    title: "Heilsame Berührung - ganzheitliche Energiebehandlung",
+    shortDesc: "Mit sanften Berührungen an verschiedenen energetischen Punkten des Körpers.",
+    description: "Können Emotionen befreit, Themen gelöst der Kopf frei und Gedanken wieder klarer werden.",
+    icon: "🌿",
+    price: "Auf Anfrage"
+  }, {
+    title: "Kiefer R.E.S.E.T",
+    shortDesc: "Entspannt die Kiefermuskulatur und das Kiefergelenk.",
+    description: "Hilfreich bei Zähneknirschen/pressen, Kopfschmerzen verspannte Schultern/Nacken, uvm.",
+    icon: "🦋",
+    price: "Auf Anfrage"
+  }];
+  const massageServices = [{
+    title: "Klassische Rückenmassage",
+    description: "Hier kannst du deine Seele baumeln lassen.",
+    price: "Auf Anfrage"
+  }, {
+    title: "\"Kleine Auszeit\" für Kopf, Gesicht & Arme",
+    description: "Hier darf dein Kopf \"frei\" und deine Gesichtszüge wieder entspannt werden.",
+    price: "Auf Anfrage"
+  }, {
+    title: "\"Große Auszeit\" - Klassische Ganzkörpermassage",
+    description: "90 Minuten Erholung pur für Körper, Geist & Seele.",
+    price: "Auf Anfrage"
+  }, {
+    title: "Lomi Lomi Nui Massage",
+    description: "Die Königin der Massagen. Großflächige fließende Bewegungen und viel Öl lassen diese Ganzkörpermassage zu einem \"Fest der Sinne\" werden.",
+    price: "Auf Anfrage"
+  }, {
+    title: "Teilmassage Rücken & Beine",
+    description: "In dieser entspannten Massage widmen wir uns ausschließlich deinem Rücken und deinen Beinen.",
+    price: "Auf Anfrage"
+  }, {
+    title: "Aromamassage",
+    description: "Alle Massagen gerne auch mit aromatisiertem Ölen möglich.",
+    price: "Aufpreis je 3 €"
+  }, {
+    title: "Fußreflexzonen - Wohlfühlmassage",
+    description: "Fördert die Durchblutung, sodass gestaute oder blockierte Lebensenergie wieder fließen kann.",
+    price: "Auf Anfrage"
+  }];
+  const specialServices = [{
+    title: "Hormon - Balance - Massage",
+    description: "Wirkt entgiftend, entschlackend, den Hormonhaushalt harmonisierend & kann unterstützen bei PMS, Wechseljahresbeschwerden & hormonellen Dysfunktionen.",
+    price: "Auf Anfrage"
+  }, {
+    title: "Tibetische Energiemassage - Streicheleinheit für die Seele",
+    description: "Ein \"Wellness-Kurztrip\" mit Langzeitwirkung!",
+    price: "Auf Anfrage"
+  }, {
+    title: "Wirbelsäulenentspannung nach Breuss",
+    description: "Eine \"Verjüngungskur für die Bandscheiben\".",
+    price: "Auf Anfrage"
+  }, {
+    title: "Yin Yoga Kurse & Workshops",
+    description: "Ruhige, meditative Yoga-Praxis mit längeren Haltungen für tiefe Entspannung und innere Ruhe.",
+    price: "Auf Anfrage"
+  }];
+  return <section id="services" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-cormorant text-4xl md:text-5xl font-light text-auszeit-text mb-6">
@@ -115,8 +91,7 @@ const ServicesSection = () => {
             Energetische Anwendungen
           </h3>
           <div className="grid md:grid-cols-2 gap-8">
-            {mainServices.map((service, index) => (
-              <Card key={index} className="border-auszeit-pink/20 hover:border-auszeit-pink/40 transition-all duration-300 hover:scale-105 bg-auszeit-pink-light/30">
+            {mainServices.map((service, index) => <Card key={index} className="border-auszeit-pink/20 hover:border-auszeit-pink/40 transition-all duration-300 hover:scale-105 bg-auszeit-pink-light/30">
                 <CardContent className="p-8">
                   <div className="text-center mb-4">
                     <div className="text-4xl mb-4">{service.icon}</div>
@@ -132,8 +107,7 @@ const ServicesSection = () => {
                     {service.description}
                   </p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
 
@@ -144,9 +118,8 @@ const ServicesSection = () => {
           </h3>
           <div className="max-w-4xl mx-auto">
             <Accordion type="single" collapsible className="w-full">
-              {massageServices.map((service, index) => (
-                <AccordionItem key={index} value={`massage-${index}`} className="border-auszeit-pink/20">
-                  <AccordionTrigger className="font-cormorant text-lg font-medium text-auszeit-text hover:text-auszeit-pink">
+              {massageServices.map((service, index) => <AccordionItem key={index} value={`massage-${index}`} className="border-auszeit-pink/20">
+                  <AccordionTrigger className="font-cormorant font-medium text-auszeit-text hover:text-auszeit-pink text-lg rounded-none">
                     <div className="flex justify-between items-center w-full pr-4">
                       <span>{service.title}</span>
                       <span className="text-auszeit-pink text-sm font-normal">{service.price}</span>
@@ -155,8 +128,7 @@ const ServicesSection = () => {
                   <AccordionContent className="text-auszeit-text/70 leading-relaxed">
                     {service.description}
                   </AccordionContent>
-                </AccordionItem>
-              ))}
+                </AccordionItem>)}
             </Accordion>
           </div>
         </div>
@@ -168,8 +140,7 @@ const ServicesSection = () => {
           </h3>
           <div className="max-w-4xl mx-auto">
             <Accordion type="single" collapsible className="w-full">
-              {specialServices.map((service, index) => (
-                <AccordionItem key={index} value={`special-${index}`} className="border-auszeit-pink/20">
+              {specialServices.map((service, index) => <AccordionItem key={index} value={`special-${index}`} className="border-auszeit-pink/20">
                   <AccordionTrigger className="font-cormorant text-lg font-medium text-auszeit-text hover:text-auszeit-pink">
                     <div className="flex justify-between items-center w-full pr-4">
                       <span>{service.title}</span>
@@ -179,8 +150,7 @@ const ServicesSection = () => {
                   <AccordionContent className="text-auszeit-text/70 leading-relaxed">
                     {service.description}
                   </AccordionContent>
-                </AccordionItem>
-              ))}
+                </AccordionItem>)}
             </Accordion>
           </div>
         </div>
@@ -199,8 +169,6 @@ const ServicesSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ServicesSection;
