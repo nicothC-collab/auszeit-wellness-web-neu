@@ -25,12 +25,12 @@ const ContactSection = () => {
                 <div className="space-y-4 mb-8">
                   <div>
                     <h4 className="font-medium text-auszeit-text mb-2">Telefon</h4>
-                    <p className="text-auszeit-text/70">Bitte per E-Mail kontaktieren</p>
+                    <p className="text-auszeit-text/70">(+49)172 8942933</p>
                   </div>
                   
                   <div>
                     <h4 className="font-medium text-auszeit-text mb-2">E-Mail</h4>
-                    <p className="text-auszeit-text/70">info@auszeit-sonja.de</p>
+                    <p className="text-auszeit-text/70">auszeit@edv-thalhammer.de</p>
                   </div>
                   
                   <div>
