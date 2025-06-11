@@ -1,5 +1,5 @@
 
-import { useState, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import {
   Carousel,
   CarouselContent,
@@ -35,8 +35,23 @@ const ImageSlider = () => {
     }
   ];
 
+  useEffect(() => {
+    if (!api) return;
+
+    const onSelect = () => {
+      setCurrentSlide(api.selectedScrollSnap());
+    };
+
+    api.on('select', onSelect);
+    onSelect();
+
+    return () => {
+      api.off('select', onSelect);
+    };
+  }, [api]);
+
   return (
-    <div className="relative w-full h-[60vh] md:h-[70vh] lg:h-[80vh] overflow-hidden">
+    <div className="relative w-full h-[60vh] md:h-[70vh] lg:h-[80vh] overflow-hidden bg-gradient-to-b from-auszeit-pink-light to-white">
       <Carousel 
         className="w-full h-full" 
         opts={{ loop: true }}
@@ -45,16 +60,16 @@ const ImageSlider = () => {
         <CarouselContent className="h-full">
           {images.map((image, index) => (
             <CarouselItem key={index} className="h-full">
-              <div className="relative w-full h-full">
+              <div className="relative w-full h-full flex items-center justify-center">
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-full object-contain bg-gradient-to-b from-auszeit-pink-light to-white"
+                  className="max-w-full max-h-full object-contain"
                   loading={index === 0 ? 'eager' : 'lazy'}
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40" />
                 
-                <div className="absolute inset-0 flex items-center justify-center">
+                {/* Text overlay */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/10">
                   <div className="text-center text-auszeit-text px-4 max-w-4xl">
                     <h1 className="font-cormorant text-4xl md:text-6xl lg:text-7xl font-light mb-4 animate-fade-in drop-shadow-lg">
                       {image.title}
@@ -87,7 +102,6 @@ const ImageSlider = () => {
             onClick={() => {
               if (api) {
                 api.scrollTo(index);
-                setCurrentSlide(index);
               }
             }}
           />
