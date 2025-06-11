@@ -1,8 +1,14 @@
+
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Heart } from 'lucide-react';
+import { Heart, Phone, Mail } from 'lucide-react';
+
 const ContactSection = () => {
-  return <section id="contact" className="py-20 bg-background">
+  const phoneNumber = "+491728942933";
+  const email = "auszeit@edv-thalhammer.de";
+  
+  return (
+    <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-cormorant text-4xl md:text-5xl font-light text-auszeit-text mb-6">
@@ -24,13 +30,31 @@ const ContactSection = () => {
                 
                 <div className="space-y-4 mb-8">
                   <div>
-                    <h4 className="font-medium text-auszeit-text mb-2">Telefon & Whatsapp</h4>
-                    <p className="text-auszeit-text/70">(+49)172 8942933</p>
+                    <h4 className="font-medium text-auszeit-text mb-2 flex items-center space-x-2">
+                      <Phone className="w-4 h-4" />
+                      <span>Telefon & Whatsapp</span>
+                    </h4>
+                    <a 
+                      href={`https://wa.me/${phoneNumber.replace(/\D/g, '')}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-auszeit-pink hover:text-auszeit-pink/80 transition-colors underline decoration-auszeit-pink/30 hover:decoration-auszeit-pink/60"
+                    >
+                      (+49)172 8942933
+                    </a>
                   </div>
                   
                   <div>
-                    <h4 className="font-medium text-auszeit-text mb-2">E-Mail</h4>
-                    <p className="text-auszeit-text/70">auszeit@edv-thalhammer.de</p>
+                    <h4 className="font-medium text-auszeit-text mb-2 flex items-center space-x-2">
+                      <Mail className="w-4 h-4" />
+                      <span>E-Mail</span>
+                    </h4>
+                    <a 
+                      href={`mailto:${email}`}
+                      className="text-auszeit-pink hover:text-auszeit-pink/80 transition-colors underline decoration-auszeit-pink/30 hover:decoration-auszeit-pink/60"
+                    >
+                      auszeit@edv-thalhammer.de
+                    </a>
                   </div>
                   
                   <div>
@@ -60,7 +84,12 @@ const ContactSection = () => {
                   <p className="text-auszeit-text/70 mb-6 leading-relaxed">
                     Ich nehme mir gerne Zeit für ein persönliches Gespräch, um die für dich passende Anwendung zu finden.
                   </p>
-                  <Button className="w-full bg-auszeit-pink hover:bg-auszeit-pink/90 text-white text-base">Auf Whatsapp schreiben</Button>
+                  <Button 
+                    className="w-full bg-auszeit-pink hover:bg-auszeit-pink/90 text-white text-base"
+                    onClick={() => window.open(`https://wa.me/${phoneNumber.replace(/\D/g, '')}`, '_blank')}
+                  >
+                    Auf WhatsApp schreiben
+                  </Button>
                 </CardContent>
               </Card>
 
@@ -93,6 +122,8 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default ContactSection;

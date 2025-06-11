@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import {
   Carousel,
   CarouselContent,
@@ -8,9 +8,11 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 import { cn } from '@/lib/utils';
+import type { CarouselApi } from '@/components/ui/carousel';
 
 const ImageSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [api, setApi] = useState<CarouselApi>();
 
   const images = [
     {
@@ -38,11 +40,7 @@ const ImageSlider = () => {
       <Carousel 
         className="w-full h-full" 
         opts={{ loop: true }}
-        onSelect={(emblaApi) => {
-          if (emblaApi) {
-            setCurrentSlide(emblaApi.selectedScrollSnap());
-          }
-        }}
+        setApi={setApi}
       >
         <CarouselContent className="h-full">
           {images.map((image, index) => (
@@ -86,7 +84,12 @@ const ImageSlider = () => {
                 ? "bg-auszeit-pink scale-110" 
                 : "bg-auszeit-pink/50 hover:bg-auszeit-pink/70"
             )}
-            onClick={() => setCurrentSlide(index)}
+            onClick={() => {
+              if (api) {
+                api.scrollTo(index);
+                setCurrentSlide(index);
+              }
+            }}
           />
         ))}
       </div>
