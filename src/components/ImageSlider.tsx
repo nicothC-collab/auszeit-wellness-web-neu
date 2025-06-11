@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {
   Carousel,
   CarouselContent,
@@ -35,7 +35,15 @@ const ImageSlider = () => {
 
   return (
     <div className="relative w-full h-[60vh] md:h-[70vh] lg:h-[80vh] overflow-hidden">
-      <Carousel className="w-full h-full" opts={{ loop: true }}>
+      <Carousel 
+        className="w-full h-full" 
+        opts={{ loop: true }}
+        onSelect={(emblaApi) => {
+          if (emblaApi) {
+            setCurrentSlide(emblaApi.selectedScrollSnap());
+          }
+        }}
+      >
         <CarouselContent className="h-full">
           {images.map((image, index) => (
             <CarouselItem key={index} className="h-full">
@@ -43,17 +51,17 @@ const ImageSlider = () => {
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain bg-gradient-to-b from-auszeit-pink-light to-white"
                   loading={index === 0 ? 'eager' : 'lazy'}
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/40" />
                 
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center text-white px-4 max-w-4xl">
-                    <h1 className="font-cormorant text-4xl md:text-6xl lg:text-7xl font-light mb-4 animate-fade-in">
+                  <div className="text-center text-auszeit-text px-4 max-w-4xl">
+                    <h1 className="font-cormorant text-4xl md:text-6xl lg:text-7xl font-light mb-4 animate-fade-in drop-shadow-lg">
                       {image.title}
                     </h1>
-                    <p className="text-lg md:text-xl lg:text-2xl font-light opacity-90 animate-fade-in">
+                    <p className="text-lg md:text-xl lg:text-2xl font-light opacity-90 animate-fade-in drop-shadow-md">
                       {image.subtitle}
                     </p>
                   </div>
@@ -63,8 +71,8 @@ const ImageSlider = () => {
           ))}
         </CarouselContent>
         
-        <CarouselPrevious className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 border-white/30 text-white backdrop-blur-sm transition-all duration-300" />
-        <CarouselNext className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 border-white/30 text-white backdrop-blur-sm transition-all duration-300" />
+        <CarouselPrevious className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 border-white/30 text-auszeit-text backdrop-blur-sm transition-all duration-300" />
+        <CarouselNext className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 border-white/30 text-auszeit-text backdrop-blur-sm transition-all duration-300" />
       </Carousel>
       
       {/* Slide indicators */}
@@ -75,8 +83,8 @@ const ImageSlider = () => {
             className={cn(
               "w-3 h-3 rounded-full transition-all duration-300",
               index === currentSlide 
-                ? "bg-white scale-110" 
-                : "bg-white/50 hover:bg-white/70"
+                ? "bg-auszeit-pink scale-110" 
+                : "bg-auszeit-pink/50 hover:bg-auszeit-pink/70"
             )}
             onClick={() => setCurrentSlide(index)}
           />
