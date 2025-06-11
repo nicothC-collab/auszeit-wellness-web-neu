@@ -24,7 +24,7 @@ const ContactSection = () => {
                 
                 <div className="space-y-4 mb-8">
                   <div>
-                    <h4 className="font-medium text-auszeit-text mb-2">Telefon</h4>
+                    <h4 className="font-medium text-auszeit-text mb-2">Telefon & Whatsapp</h4>
                     <p className="text-auszeit-text/70">(+49)172 8942933</p>
                   </div>
                   
@@ -60,9 +60,7 @@ const ContactSection = () => {
                   <p className="text-auszeit-text/70 mb-6 leading-relaxed">
                     Ich nehme mir gerne Zeit für ein persönliches Gespräch, um die für dich passende Anwendung zu finden.
                   </p>
-                  <Button className="w-full bg-auszeit-pink hover:bg-auszeit-pink/90 text-white text-base">
-                    E-Mail schreiben
-                  </Button>
+                  <Button className="w-full bg-auszeit-pink hover:bg-auszeit-pink/90 text-white text-base">Auf Whatsapp schreiben</Button>
                 </CardContent>
               </Card>
 
