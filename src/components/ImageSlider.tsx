@@ -14,28 +14,22 @@ const ImageSlider = () => {
 
   const images = [
     {
-      src: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-      alt: 'Entspannung und Wohlbefinden',
-      title: 'Energetische Anwendungen',
-      subtitle: 'Für Körper, Geist & Seele'
+      src: '/lovable-uploads/22aacb6f-c6cc-4371-aa4f-bcbd68133dd3.png',
+      alt: 'Auszeit - Sonja Thalhammer Logo',
+      title: 'Auszeit',
+      subtitle: 'für Körper, Geist & Seele'
     },
     {
-      src: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-      alt: 'Ruhe und Klarheit',
-      title: 'Innere Balance finden',
-      subtitle: 'In der Stille liegt die Kraft'
+      src: '/lovable-uploads/fb02c27f-2396-4d72-a7de-1c7a727d965c.png',
+      alt: 'Praxisraum mit Auszeit Kissen',
+      title: 'Entspannung und Wohlbefinden',
+      subtitle: 'In ruhiger und gemütlicher Atmosphäre'
     },
     {
-      src: 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-      alt: 'Natürliche Heilung',
-      title: 'Natürliche Selbstheilung',
+      src: '/lovable-uploads/b59cdb88-a5c3-4c63-9cd3-8fd794b8b38e.png',
+      alt: 'Behandlungsraum mit natürlichen Elementen',
+      title: 'Natürliche Heilung',
       subtitle: 'Aktiviere deine inneren Kräfte'
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-      alt: 'Blüten und Wachstum',
-      title: 'Persönliches Wachstum',
-      subtitle: 'Entfalte dein wahres Potenzial'
     }
   ];
 
