@@ -1,19 +1,18 @@
-
 export const holisticBodyworkServices = [
   {
     title: "Craniosacrale Entspannung",
     description: "Eine sehr sanfte Behandlungsform, die das craniosacrale System harmonisiert und tiefe Ruhe schenkt. Fördert das harmonische Gleichgewicht zwischen Anspannung und Entspannung. Kann auch bei Kopfschmerzen/Migräne, Schlafproblemen, Stress uvm. lindernd wirken.",
-    price: "60 Min. € 60,-"
+    price: ""
   },
   {
     title: "Kiefer R.E.S.E.T",
     description: "Entspannt die Kiefermuskulatur und das Kiefergelenk. Hilfreich bei Zähneknirschen/pressen, Kopfschmerzen, verspannte Schultern/Nacken, uvm.",
-    price: "45 Min. € 50,-"
+    price: ""
   },
   {
     title: "Holistic Pulsing",
     description: "Eine sanfte Körperarbeit, die durch rhythmische Bewegungen tiefe Entspannung und Loslassen ermöglicht.",
-    price: "60 Min. € 60,-"
+    price: ""
   }
 ];
 

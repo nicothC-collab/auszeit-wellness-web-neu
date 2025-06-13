@@ -20,7 +20,9 @@ const ServiceAccordion = ({ services, categoryKey }: ServiceAccordionProps) => {
           <AccordionTrigger className="font-cormorant font-medium text-auszeit-text hover:text-auszeit-pink text-lg">
             <div className="flex justify-between items-center w-full pr-4">
               <span>{service.title}</span>
-              <span className="text-auszeit-pink text-sm font-normal">{service.price}</span>
+              {service.price && (
+                <span className="text-auszeit-pink text-sm font-normal">{service.price}</span>
+              )}
             </div>
           </AccordionTrigger>
           <AccordionContent className="text-auszeit-text/70 leading-relaxed">

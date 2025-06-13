@@ -16,6 +16,7 @@ const ServicesSection = () => {
           description="Ganzheitliche Körperarbeit, die Körper, Geist und Seele in Einklang bringt. Diese sanften Methoden aktivieren die natürlichen Selbstheilungskräfte und fördern tiefe Entspannung und innere Balance."
           services={holisticBodyworkServices}
           categoryKey="holistic"
+          priceInfo="Alle Anwendungen buchbar für 30, 60 oder 90 Minuten • Jede 30 Minuten: € 35,00"
         />
 
         <ServiceCategory
