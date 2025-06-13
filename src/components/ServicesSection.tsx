@@ -31,6 +31,7 @@ const ServicesSection = () => {
           description="Klassische und energetische Massagen für tiefe Entspannung und Regeneration. Diese Anwendungen lösen Verspannungen, fördern die Durchblutung und harmonisieren den Energiefluss im Körter."
           services={wellnessServices}
           categoryKey="wellness"
+          priceInfo="Alle Anwendungen buchbar für 30, 60 oder 90 Minuten • Jede 30 Minuten: € 35,00"
         />
 
         <MonthlyOffer />

@@ -1,3 +1,4 @@
+
 export const holisticBodyworkServices = [
   {
     title: "Craniosacrale Entspannung",
@@ -20,17 +21,22 @@ export const aromatherapyServices = [
   {
     title: "Neuro-Auricular-Technique",
     description: "Eine innovative Technik, die über bestimmte Punkte am Ohr das Nervensystem harmonisiert und entspannt.",
-    price: "45 Min. € 50,-"
+    price: "30 Min. € 60,-"
   },
   {
-    title: "Release Anwendung",
-    description: "Eine spezielle Anwendung zur Lösung von emotionalen und körperlichen Blockaden durch gezielte Techniken.",
-    price: "60 Min. € 60,-"
+    title: "Release Anwendung inkl. Hände & Füße",
+    description: "Eine spezielle Anwendung zur Lösung von emotionalen und körperlichen Blockaden durch gezielte Techniken an Händen und Füßen.",
+    price: "60 Min. € 75,-"
+  },
+  {
+    title: "Release Anwendung nur Hände oder nur Füße",
+    description: "Eine gezielte Anwendung zur Lösung von Blockaden, fokussiert auf entweder Hände oder Füße.",
+    price: "30 Min. € 40,-"
   },
   {
     title: "Energiepunkt Anwendung",
     description: "Gezielte Arbeit an energetischen Punkten des Körpers zur Harmonisierung des Energieflusses.",
-    price: "45 Min. € 50,-"
+    price: "60 Min. € 95,-"
   }
 ];
 
@@ -38,31 +44,31 @@ export const wellnessServices = [
   {
     title: "\"Kleine Auszeit\" für Kopf, Gesicht & Arme",
     description: "Hier darf dein Kopf \"frei\" und deine Gesichtszüge wieder entspannt werden.",
-    price: "30 Min. € 35,-"
+    price: ""
   },
   {
     title: "\"Große Auszeit\" - Klassische Ganzkörpermassage",
     description: "90 Minuten Erholung pur für Körper, Geist & Seele.",
-    price: "90 Min. € 80,-"
+    price: ""
   },
   {
     title: "Wirbelsäulenentspannung nach Breuss",
     description: "Eine \"Verjüngungskur für die Bandscheiben\".",
-    price: "45 Min. € 50,-"
+    price: ""
   },
   {
     title: "Tibetische Energiemassage - Streicheleinheit für die Seele",
     description: "Ein \"Wellness-Kurztrip\" mit Langzeitwirkung!",
-    price: "60 Min. € 60,-"
+    price: ""
   },
   {
     title: "Hormon - Balance - Massage",
     description: "Wirkt entgiftend, entschlackend, den Hormonhaushalt harmonisierend & kann unterstützen bei PMS, Wechseljahresbeschwerden & hormonellen Dysfunktionen.",
-    price: "60 Min. € 65,-"
+    price: ""
   },
   {
     title: "Fußreflexzonen - Wohlfühlmassage",
     description: "Fördert die Durchblutung, sodass gestaute oder blockierte Lebensenergie wieder fließen kann.",
-    price: "45 Min. € 50,-"
+    price: ""
   }
 ];
