@@ -61,7 +61,7 @@ const ContactSection = () => {
                     <h4 className="font-medium text-auszeit-text mb-2">Social Media</h4>
                     <div className="flex space-x-4">
                       <a 
-                        href="https://www.instagram.com"
+                        href="https://www.instagram.com/auszeitsonjathalhammer"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-auszeit-pink hover:text-auszeit-pink/80 transition-colors"
@@ -69,7 +69,7 @@ const ContactSection = () => {
                         <Instagram className="w-5 h-5" />
                       </a>
                       <a 
-                        href="https://www.facebook.com"
+                        href="https://www.facebook.com/Auszeit"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-auszeit-pink hover:text-auszeit-pink/80 transition-colors"
