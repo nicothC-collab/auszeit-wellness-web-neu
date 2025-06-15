@@ -1,10 +1,10 @@
 
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Heart, Phone, Mail } from 'lucide-react';
+import { Heart, Phone, Mail, Instagram, Facebook } from 'lucide-react';
 
 const ContactSection = () => {
-  const phoneNumber = "+491728942933";
+  const phoneNumber = "+4917656853426";
   const email = "auszeit@edv-thalhammer.de";
   
   return (
@@ -32,16 +32,11 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-medium text-auszeit-text mb-2 flex items-center space-x-2">
                       <Phone className="w-4 h-4" />
-                      <span>Telefon & Whatsapp</span>
+                      <span>Telefon</span>
                     </h4>
-                    <a 
-                      href={`https://wa.me/${phoneNumber.replace(/\D/g, '')}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-auszeit-pink hover:text-auszeit-pink/80 transition-colors underline decoration-auszeit-pink/30 hover:decoration-auszeit-pink/60"
-                    >
-                      (+49)172 8942933
-                    </a>
+                    <span className="text-auszeit-text/80">
+                      (+49) 176 56853426
+                    </span>
                   </div>
                   
                   <div>
@@ -60,6 +55,28 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-medium text-auszeit-text mb-2">Termine</h4>
                     <p className="text-auszeit-text/70">Nach Vereinbarung</p>
+                  </div>
+
+                  <div>
+                    <h4 className="font-medium text-auszeit-text mb-2">Social Media</h4>
+                    <div className="flex space-x-4">
+                      <a 
+                        href="https://www.instagram.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-auszeit-pink hover:text-auszeit-pink/80 transition-colors"
+                      >
+                        <Instagram className="w-5 h-5" />
+                      </a>
+                      <a 
+                        href="https://www.facebook.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-auszeit-pink hover:text-auszeit-pink/80 transition-colors"
+                      >
+                        <Facebook className="w-5 h-5" />
+                      </a>
+                    </div>
                   </div>
                 </div>
 
