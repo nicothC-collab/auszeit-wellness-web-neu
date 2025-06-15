@@ -4,6 +4,7 @@ import ServiceAccordion from './ServiceAccordion';
 
 interface Service {
   title: string;
+  subtitle?: string;
   description: string;
   price: string;
 }

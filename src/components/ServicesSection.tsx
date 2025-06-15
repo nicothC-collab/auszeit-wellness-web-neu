@@ -13,7 +13,7 @@ const ServicesSection = () => {
 
         <ServiceCategory
           title="HOLISTIC BODYWORK"
-          description="Ganzheitliche Körperarbeit, die Körper, Geist und Seele in Einklang bringt. Diese sanften Methoden aktivieren die natürlichen Selbstheilungskräfte und fördern tiefe Entspannung und innere Balance."
+          description="Der Mensch als Ganzes. Ganzheitliche Energiearbeit bedeutet, Körper, Geist & Seele gleichermaßen zu begegnen. Ziel ist die Harmonisierung und das Wohlbefinden des Menschen auf allen Ebenen, also körperlich, seelisch und emotional, wiederherzustellen. Mit sanften Berührungen an verschiedenen energetischen Punkten des Körpers können Emotionen befreit, Themen gelöst, der Kopf frei und Gedanken wieder klarer werden."
           services={holisticBodyworkServices}
           categoryKey="holistic"
           priceInfo="Alle Anwendungen buchbar für 30, 60 oder 90 Minuten • Jede 30 Minuten: € 35,00"
@@ -21,14 +21,14 @@ const ServicesSection = () => {
 
         <ServiceCategory
           title="AROMATHERAPIE"
-          description="Die Kraft der ätherischen Öle für Körper und Seele. Aromatherapie wirkt über die Haut und den Geruchssinn und kann tiefe Entspannung und emotionales Wohlbefinden fördern."
+          description="Dufte Entspannung. Ätherische Öle enthalten die gebündelte Lebenskraft der ganzen Pflanze. Sie wirken unmittelbar auf das Gehirn und können auf diese Weise sowohl physische, als auch psychische Prozesse im Körper des Menschen positiv beeinflussen."
           services={aromatherapyServices}
           categoryKey="aroma"
         />
 
         <ServiceCategory
           title="WELLNESS & ENERGIEMASSAGEN"
-          description="Klassische und energetische Massagen für tiefe Entspannung und Regeneration. Diese Anwendungen lösen Verspannungen, fördern die Durchblutung und harmonisieren den Energiefluss im Körter."
+          description="Klassische und energetische Massagen für tiefe Entspannung und Regeneration. Diese Anwendungen lösen Verspannungen, fördern die Durchblutung und harmonisieren den Energiefluss im Körper."
           services={wellnessServices}
           categoryKey="wellness"
           priceInfo="Alle Anwendungen buchbar für 30, 60 oder 90 Minuten • Jede 30 Minuten: € 35,00"

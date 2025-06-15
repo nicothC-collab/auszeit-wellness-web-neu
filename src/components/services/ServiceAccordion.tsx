@@ -3,6 +3,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 
 interface Service {
   title: string;
+  subtitle?: string;
   description: string;
   price: string;
 }
@@ -19,7 +20,12 @@ const ServiceAccordion = ({ services, categoryKey }: ServiceAccordionProps) => {
         <AccordionItem key={index} value={`${categoryKey}-${index}`} className="border-auszeit-pink/20">
           <AccordionTrigger className="font-cormorant font-medium text-auszeit-text hover:text-auszeit-pink text-lg">
             <div className="flex justify-between items-center w-full pr-4">
-              <span>{service.title}</span>
+              <div className="text-left">
+                <div>{service.title}</div>
+                {service.subtitle && (
+                  <div className="text-sm font-normal text-auszeit-pink italic">{service.subtitle}</div>
+                )}
+              </div>
               {service.price && (
                 <span className="text-auszeit-pink text-sm font-normal">{service.price}</span>
               )}
