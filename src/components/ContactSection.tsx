@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Heart, Phone, Mail, Instagram, Facebook } from 'lucide-react';
@@ -6,6 +5,10 @@ import { Heart, Phone, Mail, Instagram, Facebook } from 'lucide-react';
 const ContactSection = () => {
   const phoneNumber = "+4917656853426";
   const email = "auszeit@edv-thalhammer.de";
+  
+  const handleEmailClick = () => {
+    window.location.href = `mailto:${email}`;
+  };
   
   return (
     <section id="contact" className="py-20 bg-background">
@@ -44,12 +47,12 @@ const ContactSection = () => {
                       <Mail className="w-4 h-4" />
                       <span>E-Mail</span>
                     </h4>
-                    <a 
-                      href={`mailto:${email}`}
-                      className="text-auszeit-pink hover:text-auszeit-pink/80 transition-colors underline decoration-auszeit-pink/30 hover:decoration-auszeit-pink/60"
+                    <button 
+                      onClick={handleEmailClick}
+                      className="text-auszeit-pink hover:text-auszeit-pink/80 transition-colors underline decoration-auszeit-pink/30 hover:decoration-auszeit-pink/60 cursor-pointer bg-transparent border-none p-0 text-left"
                     >
                       auszeit@edv-thalhammer.de
-                    </a>
+                    </button>
                   </div>
                   
                   <div>
