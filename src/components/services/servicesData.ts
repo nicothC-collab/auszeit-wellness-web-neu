@@ -1,37 +1,32 @@
 
 export const holisticBodyworkServices = [
   {
-    title: "Craniosacrale Entspannung",
-    description: "Eine sehr sanfte Behandlungsform, die das craniosacrale System harmonisiert und tiefe Ruhe schenkt. Fördert das harmonische Gleichgewicht zwischen Anspannung und Entspannung. Kann auch bei Kopfschmerzen/Migräne, Schlafproblemen, Stress uvm. lindernd wirken.",
+    title: "Craniosacrale Körperarbeit",
+    description: "Dauerhafter Stress, chron. Schmerzen, (emotionale) Traumata, beeinträchtigen unseren Körper und können zu Beschwerden wie Kopfschmerzen/Migräne, Zähneknirschen, Verspannungen, Rückenschmerzen, Verdauungsprobleme, Tinnitus usw. führen. Sanfte Berührungen entspannen das Nervensystem und aktivieren die Selbstheilungskräfte des Köpers. Blockaden können gelöst und Lebensenergie wieder zum Fließen gebracht werden, körperliches wie emotionales Gleichgewicht stellt sich (wieder) ein.",
     price: ""
   },
   {
     title: "Kiefer R.E.S.E.T",
-    description: "Entspannt die Kiefermuskulatur und das Kiefergelenk. Hilfreich bei Zähneknirschen/pressen, Kopfschmerzen, verspannte Schultern/Nacken, uvm.",
+    description: "Wie gehabt. Zusatz: Perfekt kombinierbar mit Cranioscraler Körperarbeit.",
     price: ""
   },
   {
     title: "Holistic Pulsing",
-    description: "Eine sanfte Körperarbeit, die durch rhythmische Bewegungen tiefe Entspannung und Loslassen ermöglicht.",
+    description: "Konstante, wiegende Bewegungen versetzen den Körper in eine sanfte Schwingung, die ein Gefühl von Geborgenheit, tiefem Urvertrauen und innerer Harmonie fördert. Die dabei entstehende tiefe Entspannung bringt uns vom Kopf zurück ins Herz, vom Denken ins Fühlen, und Körper, Geist & Seele wieder in Einklang.",
     price: ""
   }
 ];
 
 export const aromatherapyServices = [
   {
-    title: "Neuro-Auricular-Technique",
-    description: "Eine innovative Technik, die über bestimmte Punkte am Ohr das Nervensystem harmonisiert und entspannt.",
+    title: "Neuro-Auricular-Technique (NAT)",
+    description: "Anwendung am Hals-Nacken-Bereich, die alle Organe und Körpersysteme stimuliert, sowohl körperlich wie emotional entspannend, als auch befreiend auf die gesamte Nacken-Schulter-Muskulatur wirkt. Sechs hochwertige, aufeinander abgestimmte ätherische Öle bringen dich in eine tiefe Entspannung und fördern u.a. einen erholsamen Schlaf.",
     price: "30 Min. € 60,-"
   },
   {
-    title: "Release Anwendung inkl. Hände & Füße",
-    description: "Eine spezielle Anwendung zur Lösung von emotionalen und körperlichen Blockaden durch gezielte Techniken an Händen und Füßen.",
-    price: "60 Min. € 75,-"
-  },
-  {
-    title: "Release Anwendung nur Hände oder nur Füße",
-    description: "Eine gezielte Anwendung zur Lösung von Blockaden, fokussiert auf entweder Hände oder Füße.",
-    price: "30 Min. € 40,-"
+    title: "Release-Anwendung",
+    description: "Ätherische Öle enthalten die gebündelte Lebenskraft der ganzen Pflanze. Sie wirken unmittelbar auf das Gehirn und können auf diese Weise sowohl physische, als auch psychische Prozesse im Körper des Menschen positiv beeinflussen.",
+    price: "60 Min. € 75,- (inkl. Hände & Füße) / 30 Min. € 40,- (nur Hände oder nur Füße)"
   },
   {
     title: "Energiepunkt Anwendung",
