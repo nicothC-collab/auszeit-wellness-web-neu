@@ -1,5 +1,4 @@
 
-
 export const holisticBodyworkServices = [
   {
     title: "Craniosacrale Körperarbeit",
@@ -80,4 +79,3 @@ export const wellnessServices = [
     price: ""
   }
 ];
-
