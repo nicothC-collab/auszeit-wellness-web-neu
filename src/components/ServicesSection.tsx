@@ -20,14 +20,14 @@ const ServicesSection = () => {
         />
 
         <ServiceCategory
-          title="AROMATHERAPIE"
-          description="Dufte Entspannung. Ätherische Öle enthalten die gebündelte Lebenskraft der ganzen Pflanze. Sie wirken unmittelbar auf das Gehirn und können auf diese Weise sowohl physische, als auch psychische Prozesse im Körper des Menschen positiv beeinflussen."
+          title="AROMATHERAPIE - Dufte Entspannung"
+          description="Ätherische Öle enthalten die gebündelte Lebenskraft der ganzen Pflanze. Sie wirken unmittelbar auf das Gehirn und können auf diese Weise sowohl physische, als auch psychische Prozesse im Körper des Menschen positiv beeinflussen."
           services={aromatherapyServices}
           categoryKey="aroma"
         />
 
         <ServiceCategory
-          title="WELLNESS & ENERGIEMASSAGEN"
+          title="WELLNESS- & ENERGIEMASSAGEN"
           description="Klassische und energetische Massagen für tiefe Entspannung und Regeneration. Diese Anwendungen lösen Verspannungen, fördern die Durchblutung und harmonisieren den Energiefluss im Körper."
           services={wellnessServices}
           categoryKey="wellness"
