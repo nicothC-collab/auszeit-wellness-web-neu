@@ -9,7 +9,7 @@ export const holisticBodyworkServices = [
   {
     title: "Kiefer R.E.S.E.T",
     subtitle: "Kiefer in Balance",
-    description: "Wie gehabt. Zusatz: Perfekt kombinierbar mit Craniosacraler Körperarbeit.",
+    description: "Entspannt die Kiefermuskulatur und das Kiefergelenk. Hilfreich bei Zähneknirschen / -pressen & kann unterstützen bei PMS, Wechseljahrsbeschwerden & hormonellen Dysfunktionen. Perfekt kombinierbar mit Craniosacraler Körperarbeit.",
     price: ""
   },
   {
