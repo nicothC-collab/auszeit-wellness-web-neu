@@ -16,7 +16,7 @@ const ImageSlider = () => {
 
   const images = [
     {
-      src: '/lovable-uploads/22aacb6f-c6cc-4371-aa4f-bcbd68133dd3.png',
+      src: '/lovable-uploads/12322054-f3ec-46ee-b8ab-67fa4fb38381.png',
       alt: 'Auszeit - Sonja Thalhammer Logo',
       title: 'Auszeit',
       subtitle: 'für Körper, Geist & Seele'

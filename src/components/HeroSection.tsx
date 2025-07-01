@@ -16,7 +16,7 @@ const HeroSection = () => {
         <div className="text-center max-w-4xl mx-auto">
           <div className="mb-8 animate-fade-in">
             <img 
-              src="/lovable-uploads/f462e444-c0ab-480f-91a6-18b3a3c500f5.png" 
+              src="/lovable-uploads/12322054-f3ec-46ee-b8ab-67fa4fb38381.png" 
               alt="Auszeit Logo" 
               className="h-32 w-auto mx-auto mb-6 animate-float"
             />

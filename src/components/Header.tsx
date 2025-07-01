@@ -19,7 +19,7 @@ const Header = () => {
         <nav className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <img 
-              src="/lovable-uploads/f462e444-c0ab-480f-91a6-18b3a3c500f5.png" 
+              src="/lovable-uploads/12322054-f3ec-46ee-b8ab-67fa4fb38381.png" 
               alt="Auszeit Logo" 
               className="h-12 w-auto"
             />
