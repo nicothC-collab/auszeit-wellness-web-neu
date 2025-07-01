@@ -64,7 +64,11 @@ const ImageSlider = () => {
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="max-w-full max-h-full object-contain"
+                  className={`w-full h-full ${
+                    index === 0 
+                      ? 'object-contain' 
+                      : 'object-cover object-center'
+                  }`}
                   loading={index === 0 ? 'eager' : 'lazy'}
                 />
                 
