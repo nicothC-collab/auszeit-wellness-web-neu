@@ -66,7 +66,9 @@ const ImageSlider = () => {
                   alt={image.alt}
                   className={`w-full h-full ${
                     index === 0 
-                      ? 'object-contain' 
+                      ? 'object-contain md:object-cover md:object-center' 
+                      : index === 1
+                      ? 'object-cover object-center md:object-contain'
                       : 'object-cover object-center'
                   }`}
                   loading={index === 0 ? 'eager' : 'lazy'}
