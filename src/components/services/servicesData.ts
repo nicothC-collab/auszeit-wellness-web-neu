@@ -1,5 +1,4 @@
 
-
 export const holisticBodyworkServices = [
   {
     title: "Craniosacrale Körperarbeit",
@@ -58,7 +57,7 @@ export const wellnessServices = [
   {
     title: "Große Auszeit",
     subtitle: "Kurzurlaub für Körper, Geist & Seele",
-    description: "Genieße eine wohltuende Massage von „Kopf bis Fuß" und erlaube dir, ganz im Hier und Jetzt anzukommen. Je nach Wunsch 60 oder 90 min.",
+    description: "Genieße eine wohltuende Massage von \"Kopf bis Fuß\" und erlaube dir, ganz im Hier und Jetzt anzukommen. Je nach Wunsch 60 oder 90 min.",
     price: ""
   },
   {
@@ -70,7 +69,7 @@ export const wellnessServices = [
   {
     title: "Tibetische Energiemassage",
     subtitle: "Streicheleinheit für die Seele",
-    description: "Langsamkeit und sehr sanfte Streichungen mit warmem Sesamöl sorgen für einen „Wellness-Kurztrip" mit Langzeitwirkung.",
+    description: "Langsamkeit und sehr sanfte Streichungen mit warmem Sesamöl sorgen für einen \"Wellness-Kurztrip\" mit Langzeitwirkung.",
     price: ""
   },
   {
@@ -86,4 +85,3 @@ export const wellnessServices = [
     price: ""
   }
 ];
-
