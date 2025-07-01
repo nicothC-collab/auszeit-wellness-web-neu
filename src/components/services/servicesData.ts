@@ -28,10 +28,16 @@ export const aromatherapyServices = [
     price: "30 Min. € 60,-"
   },
   {
-    title: "Release-Anwendung",
+    title: "Release-Anwendung inkl. Hände & Füße",
     subtitle: "vom Denken ins Fühlen",
     description: "Mobilisiert durch kleinste Bewegungen die feinen Gelenke der Finger und der Zehen. Emotionales und körperliches Loslassen, tiefe Entspannung, Erdung, freies, leichtes Körpergefühl - nimmt überflüssige Anspannung aus dem Körper.",
-    price: "60 Min. € 75,- (inkl. Hände & Füße) / 30 Min. € 40,- (nur Hände oder nur Füße)"
+    price: "60 Min. € 75,-"
+  },
+  {
+    title: "Release-Anwendung nur Hände oder nur Füße",
+    subtitle: "vom Denken ins Fühlen",
+    description: "Mobilisiert durch kleinste Bewegungen die feinen Gelenke der Finger oder der Zehen. Emotionales und körperliches Loslassen, tiefe Entspannung, Erdung, freies, leichtes Körpergefühl - nimmt überflüssige Anspannung aus dem Körper.",
+    price: "30 Min. € 40,-"
   },
   {
     title: "Energiepunkt-Anwendung mit ätherischen Ölen",
