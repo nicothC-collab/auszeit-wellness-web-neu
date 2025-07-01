@@ -68,10 +68,10 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				auszeit: {
-					pink: 'hsl(var(--auszeit-pink))',
-					'pink-light': 'hsl(var(--auszeit-pink-light))',
-					brown: 'hsl(var(--auszeit-brown))',
-					'brown-dark': 'hsl(var(--auszeit-brown-dark))',
+					pink: 'hsl(354 41% 75%)',
+					'pink-light': 'hsl(354 25% 95%)',
+					brown: 'hsl(22 28% 60%)',
+					'brown-dark': 'hsl(22 35% 45%)',
 					text: 'hsl(var(--auszeit-text))'
 				}
 			},

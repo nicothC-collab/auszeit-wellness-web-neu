@@ -18,63 +18,63 @@
     --popover: 0 0% 100%;
     --popover-foreground: 25 20% 25%;
 
-    --primary: 345 45% 75%;
+    --primary: 354 41% 75%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 25 30% 70%;
+    --secondary: 22 28% 60%;
     --secondary-foreground: 25 20% 25%;
 
-    --muted: 345 25% 95%;
+    --muted: 354 25% 95%;
     --muted-foreground: 25 15% 45%;
 
-    --accent: 345 35% 85%;
+    --accent: 354 35% 85%;
     --accent-foreground: 25 20% 25%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 345 20% 90%;
-    --input: 345 20% 90%;
-    --ring: 345 45% 75%;
+    --border: 354 20% 90%;
+    --input: 354 20% 90%;
+    --ring: 354 41% 75%;
 
     --radius: 0.75rem;
 
     /* Custom Auszeit colors */
-    --auszeit-pink: 345 45% 75%;
-    --auszeit-pink-light: 345 25% 95%;
-    --auszeit-brown: 25 30% 70%;
-    --auszeit-brown-dark: 25 35% 45%;
+    --auszeit-pink: 354 41% 75%;
+    --auszeit-pink-light: 354 25% 95%;
+    --auszeit-brown: 22 28% 60%;
+    --auszeit-brown-dark: 22 35% 45%;
     --auszeit-text: 25 20% 25%;
   }
 
   .dark {
     --background: 25 20% 8%;
-    --foreground: 345 25% 95%;
+    --foreground: 354 25% 95%;
 
     --card: 25 20% 10%;
-    --card-foreground: 345 25% 95%;
+    --card-foreground: 354 25% 95%;
 
     --popover: 25 20% 10%;
-    --popover-foreground: 345 25% 95%;
+    --popover-foreground: 354 25% 95%;
 
-    --primary: 345 45% 75%;
+    --primary: 354 41% 75%;
     --primary-foreground: 25 20% 8%;
 
-    --secondary: 25 30% 20%;
-    --secondary-foreground: 345 25% 95%;
+    --secondary: 22 28% 20%;
+    --secondary-foreground: 354 25% 95%;
 
     --muted: 25 20% 15%;
-    --muted-foreground: 345 15% 65%;
+    --muted-foreground: 354 15% 65%;
 
     --accent: 25 20% 15%;
-    --accent-foreground: 345 25% 95%;
+    --accent-foreground: 354 25% 95%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 25 20% 15%;
     --input: 25 20% 15%;
-    --ring: 345 45% 75%;
+    --ring: 354 41% 75%;
   }
 }
 
